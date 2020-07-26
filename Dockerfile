@@ -5,7 +5,7 @@ ENV VERSION=$BDS_Version
 
 # Install dependencies
 RUN apt-get update && \
-    apt-get install -y unzip curl libcurl4 libssl1.0.0 && \
+    apt-get install -y unzip curl libcurl4 libssl1.0.0 vi && \
     rm -rf /var/lib/apt/lists/*
 
 # Download and extract the bedrock server
